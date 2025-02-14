@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StealthByte Network LTD</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #e0e0e0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #1e1e1e;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        h1, h2 {
+            color: #ffffff;
+        }
+        p {
+            color: #b0b0b0;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        function showEmail(user, domain) {
+            document.write(join('<a href="mai', 'lto:') + user + '@' + domain + '">' + user + '@' + domain + '</a>');
+        }
+        function join(...strings) {
+            return strings.join('');
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <h1>StealthByte Network LTD</h1>
+    <p>Be unique, go stealth.</p>
+    <br>
+
+    <h2>ASN Information</h2>
+    <p>ASN: <strong id="asn"></strong></p>
+    <p><a href=".." target="_blank" id="asn-bgp-tools">View on BGP.Tools</a></p>
+    <p><a href=".." target="_blank" id="asn-peering-db">View on PeeringDB</a></p>
+    <br>
+
+    <h2>IP Range</h2>
+    <p id="ip-cidr">..</p>
+    <p><a href=".." target="_blank" id="ip-cidr-bgp-tools">View on BGP.Tools</a></p>
+    <br>
+
+    <h2>Contact</h2>
+    <p>Noc Contact: <script>showEmail("k", join('ov', 'esen.de', 'v'));</script></p>
+    <p>Abuse Contact: <script>showEmail("abuse", join('oves', 'en.d', 'ev'));</script></p>
+    <br>
+
+    <h2>Business Registration</h2>
+    <p><a href=".." target="_blank" id="business-url">View Registration</a></p>
+</div>
+<script>
+    document.getElementById('asn').innerText = join('AS', '59', '730');
+    document.getElementById('asn-bgp-tools').href = join('htt', 'ps:', '//bgp', '.tools/a', 's/597', '30');
+    document.getElementById('asn-peering-db').href = join('ht', 'tps:/', '/www.peering', 'db.com/a', 'sn/59', '730');
+    document.getElementById('ip-cidr').innerText = join('23.16', '9.16', '9.0/', '24');
+    document.getElementById('ip-cidr-bgp-tools').href = join('https:/', '/bgp.too', 'ls/prefix/2', '3.169.16', '9.0/24');
+    document.getElementById('business-url').href = join('ht', 'tps:/', '/find-and-upd', 'ate.company-information.service.g', 'ov.uk/comp', 'any/16', '186', '774');
+</script>
+</body>
+</html>
